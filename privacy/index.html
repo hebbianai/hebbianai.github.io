@@ -21,7 +21,7 @@
 </ul>
 <p>If you are signed in, this data is <strong>synced to your account</strong> on Supabase so you can back up and restore it across devices. If you use the app without an account, this data stays <strong>only on your device</strong>.</p>
 <h3 id="c-installed-app-information">c. Installed-app information</h3>
-<p>To let you pick which app a gesture should open, the app reads the <strong>list of launchable apps installed on your device</strong> (using the <code>QUERY_ALL_PACKAGES</code> permission). This list is used <strong>on the device</strong> to display the app picker and to launch the app you choose. The full list is <strong>not uploaded</strong> to our servers.</p>
+<p>To let you pick which app a gesture should open, the app reads the <strong>list of apps on your device that expose a launcher activity</strong>. Android package visibility is limited to this launcher-app query; the app does not request broad access to all installed packages. This list is used <strong>on the device</strong> to display the app picker and launch the app you choose. The list is <strong>not uploaded</strong> to our servers.</p>
 <h3 id="d-ai-shortcut-name-suggestions">d. AI shortcut-name suggestions</h3>
 <p>If you create a multi-action shortcut, the app can suggest a name. To do this, it sends the <strong>labels of the selected actions</strong> (e.g., app and action names) to our <strong>Supabase Edge Function</strong>, which forwards them to <strong>OpenAI</strong> to generate a suggested name. This text is used only to generate the suggestion and is not used to identify you.</p>
 <h3 id="e-profile-avatar-optional">e. Profile avatar (optional)</h3>
@@ -57,7 +57,7 @@
 <ul>
 <li><strong>Display over other apps (overlay):</strong> to show the floating “edge handle” and the gesture-drawing canvas on top of other apps.</li>
 <li><strong>Foreground service (special use):</strong> to keep the edge handle available so you can open the gesture canvas from any screen.</li>
-<li><strong>Query all packages:</strong> to list installed launchable apps so you can assign them to gestures (used on-device).</li>
+<li><strong>Launcher-app visibility:</strong> to list apps that expose a launcher activity so you can assign them to gestures (used on-device). The app does not request visibility into every installed package.</li>
 <li><strong>Internet:</strong> for sign-in, sync, AI name suggestions, consent management, advertising, and Google Play purchase processing and restoration.</li>
 <li><strong>Advertising ID (when available):</strong> declared by the Google Mobile Ads SDK and used for advertising, measurement, and fraud prevention. You can reset or delete this identifier in Android settings.</li>
 </ul>
