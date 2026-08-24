@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1344" height="768" viewBox="0 0 1344 768" role="img" aria-labelledby="title description">
+  <title id="title">Gesture routine editorial image</title>
+  <desc id="description">A phone workflow illustration with gesture paths and productivity notes.</desc>
+  <rect width="1344" height="768" fill="#f7f0df" />
+  <path d="M96 96h1152v576H96z" fill="#fffdf8" stroke="#161615" stroke-width="3" />
+  <path d="M238 156h320v456H238z" fill="#e7efe4" stroke="#161615" stroke-width="6" />
+  <path d="M294 218h208M294 276h160M294 334h236M294 392h130" stroke="#176b57" stroke-width="16" stroke-linecap="square" />
+  <path d="M692 214c116 14 178 68 184 160 7 96 62 154 168 174" fill="none" stroke="#d34f38" stroke-width="18" stroke-linecap="round" />
+  <circle cx="692" cy="214" r="30" fill="#f4d35e" stroke="#161615" stroke-width="5" />
+  <circle cx="1044" cy="548" r="30" fill="#a6c8ef" stroke="#161615" stroke-width="5" />
+  <path d="M738 140h302v58H738zM778 438h318v58H778z" fill="#161615" />
+  <path d="M760 160h210M800 458h210" stroke="#fffdf8" stroke-width="10" />
+  <path d="M164 642h1016" stroke="#161615" stroke-width="3" stroke-dasharray="18 14" />
+</svg>
