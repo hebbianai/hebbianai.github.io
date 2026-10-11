@@ -26,15 +26,8 @@
 <p>If you create a multi-action shortcut, the app can suggest a name. To do this, it sends the <strong>labels of the selected actions</strong> (e.g., app and action names) to our <strong>Supabase Edge Function</strong>, which forwards them to <strong>OpenAI</strong> to generate a suggested name. This text is used only to generate the suggestion and is not used to identify you.</p>
 <h3 id="e-profile-avatar-optional">e. Profile avatar (optional)</h3>
 <p>If you are signed in, the app may request a profile image from <strong>Gravatar</strong> using a hashed version of your email address. If no image exists, the app shows your initial instead.</p>
-<h3 id="f-advertising-data">f. Advertising data</h3>
-<p>The app displays banner ads using the <strong>Google Mobile Ads SDK (AdMob)</strong>. Google may automatically collect and share the following data for advertising, analytics, and fraud-prevention purposes:</p>
-<ul>
-<li><strong>IP address</strong>, which may be used to estimate a device’s general location</li>
-<li><strong>App and ad interactions</strong>, such as app launches, taps, ad impressions, and video views</li>
-<li><strong>Diagnostic information</strong>, such as app or SDK performance, startup time, hangs, and energy usage</li>
-<li><strong>Device and account identifiers</strong>, including the Android advertising ID and app set ID when available</li>
-</ul>
-<p>This advertising data is transmitted to Google using encryption in transit. Where required, the app uses Google’s <strong>User Messaging Platform (UMP)</strong> to request consent before requesting ads. You can revisit Google’s advertising privacy choices from Settings when that option is required for your region, and you can reset or delete your advertising ID in Android settings.</p>
+<h3 id="f-advertising">f. Advertising</h3>
+<p>The app currently shows no ads. It does not request advertising consent and does not collect or use the Android advertising ID. If ads are offered in a future version, this policy will be updated before they become available.</p>
 <h3 id="g-purchases">g. Purchases</h3>
 <p>The app is free and currently does not sell anything: it offers no in-app purchases and does not use Google Play Billing, so it does not collect purchase or payment information. If purchases are offered in a future version, this policy will be updated before they become available.</p>
 <h3 id="h-usage-statistics-and-crash-reports">h. Usage statistics and crash reports</h3>
@@ -59,7 +52,6 @@
 <li>To back up, sync, and restore your gestures and settings.</li>
 <li>To display the app picker and launch the apps/actions you choose.</li>
 <li>To generate optional AI name suggestions for your shortcuts.</li>
-<li>To display and measure ads and prevent advertising fraud and abuse.</li>
 <li>To understand how the app is used, measure onboarding and gesture recognition, and diagnose crashes.</li>
 <li>To respond to support requests you send us.</li>
 </ul>
@@ -68,8 +60,7 @@
 <li><strong>Display over other apps (overlay):</strong> to show the floating “edge handle” and the gesture-drawing canvas on top of other apps.</li>
 <li><strong>Foreground service (special use):</strong> to keep the edge handle available so you can open the gesture canvas from any screen.</li>
 <li><strong>Launcher-app visibility:</strong> to list apps that expose a launcher activity so you can assign them to gestures (used on-device). The app does not request visibility into every installed package.</li>
-<li><strong>Internet:</strong> for sign-in, sync, AI name suggestions, consent management, advertising, and sending usage statistics and crash reports.</li>
-<li><strong>Advertising ID (when available):</strong> declared by the Google Mobile Ads SDK and used for advertising, measurement, and fraud prevention. You can reset or delete this identifier in Android settings.</li>
+<li><strong>Internet:</strong> for sign-in, sync, AI name suggestions, and sending usage statistics and crash reports.</li>
 </ul>
 <h2 id="5-third-party-services">5. Third-Party Services</h2>
 <p>We rely on the following services, each governed by its own privacy policy:</p>
@@ -78,8 +69,6 @@
 <li><strong>Google Sign-In</strong> (optional authentication) — <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
 <li><strong>OpenAI</strong> (generating shortcut-name suggestions) — <a href="https://openai.com/policies/privacy-policy">https://openai.com/policies/privacy-policy</a></li>
 <li><strong>Gravatar</strong> (optional profile image lookup) — <a href="https://automattic.com/privacy/">https://automattic.com/privacy/</a></li>
-<li><strong>Google AdMob / Google Mobile Ads SDK</strong> (banner advertising, measurement, and fraud prevention) — <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-<li><strong>Google User Messaging Platform</strong> (advertising consent and privacy choices) — <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
 <li><strong>Firebase Analytics and Firebase Crashlytics</strong> (usage statistics and crash reports) — <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
 <li><strong>Google Play In-App Review</strong> (optional rating prompt) — <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
 </ul>
@@ -88,7 +77,6 @@
 <ul>
 <li>Data stored only on your device is removed when you uninstall the app or clear its data.</li>
 <li>Account and synced data are retained while your account exists.</li>
-<li>Advertising data is retained by Google according to Google’s policies and the user’s advertising and consent choices.</li>
 <li>Usage statistics are retained in Google Analytics for up to 14 months; Crashlytics crash reports are retained for 90 days.</li>
 <li>You can <strong>log out</strong> at any time in Settings.</li>
 <li>To <strong>delete your account and associated synced data</strong>, contact us at the email below and we will process your request.</li>
